@@ -87,6 +87,13 @@ const MATCH_TOPIC_PALETTE = {
     keyword: 'text-lime-900',
     acronymTile: 'bg-lime-600',
   },
+  purple: {
+    header: 'bg-purple-600',
+    rowHover: 'hover:border-purple-200',
+    selectFocus: 'focus:border-purple-400',
+    keyword: 'text-purple-900',
+    acronymTile: 'bg-purple-600',
+  },
 };
 
 /** Đủ đáp án đúng cho mọi ô của section hiện tại (kéo thả, điền chỗ trống, hoặc dropdown P3). */
@@ -328,6 +335,7 @@ const App = () => {
       { id: 'l1', part: 1, section: 1, q: "How much is the **egg**?", t: "Quả trứng giá bao nhiêu?", a: "one pound fifty (1.5)" },
       { id: 'l2', part: 1, section: 1, q: "How much are the **cleaning products**?", t: "Sản phẩm vệ sinh giá bao nhiêu?", a: "one pound fifty (1.5)" },
       { id: 'l3', part: 1, section: 1, q: "Lalia **bus** cost", t: "Xe buýt Lalia giá bao nhiêu?", a: "£ 2.5" },
+      { id: 'l1327', part: 1, section: 1, q: " How much does a **bus card** cost?", t: "Thẻ xe bus giá bao nhiêu?", a: "$ 20" },
       { id: 'l4', part: 1, section: 1, q: "How much is the **laptop**?", t: "Máy tính xách tay giá bao nhiêu?", a: "£ 250" },
       { id: 'l5', part: 1, section: 1, q: "How much is the **small car**?", t: "Xe hơi nhỏ giá bao nhiêu?", a: "3250 pounds" },
       { id: 'l6', part: 1, section: 1, q: "How many clients are **Americans**?", t: "Có bao nhiêu khách hàng là người Mỹ?", a: "one" },
@@ -351,6 +359,7 @@ const App = () => {
       { id: 'l23', part: 1, section: 2, q: "When does **she** want to meet?", t: "Cô ấy muốn gặp lúc nào?", a: "Three o'clock" },
       { id: 'l24', part: 1, section: 2, q: "Jorge and **Jose** meet?", t: "Jorge và Jose gặp nhau khi nào?", a: "6:30 PM" },
       { id: 'l25', part: 1, section: 2, q: "What time **he usually eats**?", t: "Anh ấy thường ăn lúc mấy giờ?", a: "Seven o'clock / 7:00 PM" },
+      { id: 'l1328', part: 1, section: 2, q: "What time is **dinner**?", t: "Ăn tối lúc mấy giờ?", a: "7:30 pm" },
       { id: 'l26', part: 1, section: 2, q: "he **talks**", t: "Anh ấy nói chuyện trong bao lâu?", a: "15 minutes" },
       { id: 'l27', part: 1, section: 2, q: "How long to **get to the station**?", t: "Đến ga mất bao lâu?", a: "20 minutes" },
       { id: 'l28', part: 1, section: 2, q: "How much did she spend **cycling**?", t: "Đạp xe bao lâu?", a: "35 minutes" },
@@ -392,6 +401,8 @@ const App = () => {
       { id: 'l176', part: 1, section: 5, q: "Anna calls her brother **Max**. What does **Anna** do?", t: "Anna gọi anh trai mình là Max. Anna làm gì?", a: "stay late at the office" },
       { id: 'l177', part: 1, section: 5, q: "Why does he need to learn to **drive**?", t: "Tại sao anh ấy cần học lái xe?", a: "He has to drive to work" },
       { id: 'l178', part: 1, section: 5, q: "**Advice** she gives to **save money**", t: "Lời khuyên cô ấy đưa ra để tiết kiệm tiền", a: "Cook for yourself" },
+      { id: 'l1329', part: 1, section: 5, q: " Why can’t he do the job today?", t: "Tại sao anh ấy không làm việc hôm nay", a: "He has another appointment" },
+      { id: 'l1330', part: 1, section: 5, q: "What is the man going to do? ", t: "Người đàn ông đó sẽ làm gì", a: "Get something to eat" },
       { id: 'l179', part: 1, section: 5, q: "Why does **Vincent** call **James**?", t: "Tại sao Vincent lại gọi cho James?", a: "Suggest a drink" },
       { id: 'l180', part: 1, section: 5, q: "**Old manager** vs **George**", t: "Quản lý cũ và George", a: "he taught her a lot" },
       { id: 'l181', part: 1, section: 5, q: "What do **mother** and **daughter** have **in common**?", t: "Mẹ và con gái có điểm chung", a: "they have similar characters" },
@@ -427,6 +438,10 @@ const App = () => {
       { id: 'l214', part: 1, section: 6, q: "What **new facility** will the **school** have?", t: "Trường sẽ có cơ sở vật chất mới nào?", a: "the performance space" },
       { id: 'l215', part: 1, section: 6, q: "What did she **buy**?", t: "Cô ấy đã mua gì?", a: "a dress" },
       { id: 'l216', part: 1, section: 6, q: "What are they going to **change**?", t: "Họ sẽ thay đổi những gì?", a: "windows" },
+      { id: 'l1331', part: 1, section: 6, q: "What is the new health center next to?", t: "Trung tâm y tế nằm cạnh đâu?", a: "A train station" },
+      { id: 'l1332', part: 1, section: 6, q: "In which room will the director’s presentation happen?", t: "Buổi thuyết trình của giám đốc ở phòng nào?", a: "The meeting room" },
+      { id: 'l1334', part: 1, section: 6, q: "On which floor is the French class? ", t: "Lớp học tiếng Pháp ở tầng nào?", a: "Second" },
+      { id: 'l1335', part: 1, section: 6, q: "Where is she taking the staff to?", t: "Cô ấy đưa nhân viên đi đâu?", a: "To a different country" },
       { id: 'l217', part: 1, section: 6, q: "Anna is calling her **friend**. Where will they **meet**?", t: "Anna đang gọi cho bạn mình. Họ sẽ gặp nhau ở đâu?", a: "at the marketplace" },
       { id: 'l218', part: 1, section: 6, q: "Where is she going on **holidays**?", t: "Cô ấy sẽ đi nghỉ ở đâu?", a: "the mountains" },
       { id: 'l219', part: 1, section: 6, q: "What did she **like** about the **film**?", t: "Cô ấy thích gì ở bộ phim?", a: "The mountain scenes" },
@@ -441,11 +456,13 @@ const App = () => {
       { id: 'l228', part: 1, section: 6, q: "The girl meets her **dad**. Where did she **meet** him?", t: "Cô bé gặp bố mình. Cô bé gặp bố ở đâu?", a: "Front entrance" },
       { id: 'l229', part: 1, section: 6, q: "What is the **largest** **room**?", t: "Phòng lớn nhất là phòng nào?", a: "the kitchen" },
       { id: 'l230', part: 1, section: 6, q: "Where does **Anna** go for a **walk** every **morning**?", t: "Anna thường đi dạo ở đâu mỗi sáng?", a: "college" },
+      { id: 'l1336', part: 1, section: 6, q: "What is she going to take with her? ", t: "Làm gì cùng cô ấy?", a: "Games" },
       { id: 'l231', part: 1, section: 6, q: "What was his **favorite** about **school**?", t: "Điều gì ở trường khiến anh ấy thích nhất?", a: "History classes" },
       { id: 'l232', part: 1, section: 6, q: "What does he **like** to **study**?", t: "Anh ấy thích học.", a: "art" },
       { id: 'l233', part: 1, section: 6, q: "What does the man's **wife** **enjoy**?", t: "Vợ của anh ấy thích gì?", a: "photography" },
       { id: 'l234', part: 1, section: 6, q: "What did the **family** do **last year**?", t: "Năm ngoái gia đình anh ấy đã làm gì?", a: "Camping" },
       { id: 'l235', part: 1, section: 6, q: "Which **country** does the **class** study this **term**?", t: "Học kỳ này lớp học ở nước nào?", a: "France" },
+      { id: 'l1337', part: 1, section: 6, q: "What can the staff use? ", t: "Nhân viên có thể sử dụng gì?", a: "The computers" },
       { id: 'l236', part: 1, section: 6, q: "What is the **main cause** of poor **air quality**?", t: "(Không có câu tiếng Việt trong đề)", a: "Fires in the countryside" },
       { id: 'l237', part: 1, section: 6, q: "Why was **air travel** **canceled**?", t: "(Không có câu tiếng Việt trong đề)", a: "poor weather conditions" },
       { id: 'l238', part: 1, section: 6, q: "What **aspect** of the **song** attracts **attention**?", t: "(Không có câu tiếng Việt trong đề)", a: "the word" },
@@ -471,6 +488,7 @@ const App = () => {
       { id: 'l314', part: 1, section: 8, q: "Where is the **office** **located** …?", t: "Văn phòng ở đâu…", a: "Opposite the hotel" },
       { id: 'l315', part: 1, section: 8, q: "Where will the **weather** be **best**?", t: "Thời tiết ở đâu sẽ đẹp nhất?", a: "In the east" },
       { id: 'l316', part: 1, section: 8, q: "The girl forgot something in the **cafe** — where did she put it?", t: "Cô gái quên đồ trong quán cà phê; cô ấy gọi nhân viên hỏi đã bỏ đồ vào đâu?", a: "in the corner" },
+      { id: 'l1338', part: 1, section: 8, q: "What do they decide to write about?", t: "Họ quyết định viết về chủ đề gì?", a: "Historian" },
       { id: 'l317', part: 1, section: 8, q: "Who is visiting **Tom** this **weekend**?", t: "Ai sẽ đến thăm Tom vào cuối tuần này?", a: "His sister and children" },
       { id: 'l318', part: 1, section: 8, q: "Why was the **tour** **canceled**?", t: "Tại sao chuyến tham quan bị hủy?", a: "Not enough people" },
       { id: 'l319', part: 1, section: 8, q: "What is the **first job** of the **writer**?", t: "Công việc đầu tiên của người viết là gì?", a: "Teacher" },
@@ -485,31 +503,59 @@ const App = () => {
       // --- PART 2 LISTENING ---
       { id: 'lp2-1', part: 2, section: 1, isStatic: true, q: "Tham khảo đề cương", t: "Phần này không có bài tập kéo thả", a: "Không có đáp án chỉ tham khảo ở đề cương" },
 
-      // --- PART 3 LISTENING (12 sections: hàng 1 Community→Art→Beauty→Internet; hàng 2 Uni→Politics→Tech→Workplace; hàng 3 Urban→Singer→Audition→Local) ---
+      // --- PART 3 LISTENING (13 sections: S1 Children & tech; S2 Community; S3 Art … S13 Local) ---
       {
-        id: 'lp3-m', part: 3, section: 1, type: 'matching_dropdown', topicColor: 'indigo',
+        id: 'lp3-m', part: 3, section: 1, type: 'matching_dropdown', topicColor: 'purple',
+        topic: 'Children and young people with technology',
+        opener: 'Man mở lời',
+        mnemonic: 'Bạn Bè Mình Với người trẻ dùng công nghệ',
+        acronym: 'BBWM',
+        mnemonicNote: 'Woman mở lời: BBWM — Bạn Bè Với Mình… (đổi Man/Woman ở ý 3–4)',
+        statements: [
+          { id: 'st-m-1', text: 'Children are interested in tech-based **learning**', speaker: 'Both' },
+          { id: 'st-m-2', text: 'Children find it difficult to communicate **offline**', speaker: 'Both' },
+          { id: 'st-m-3', text: '**Families** require help with management of technology', speaker: 'Man' },
+          { id: 'st-m-4', text: 'Children can learn to regulate their **online** interactions', speaker: 'Woman' }
+        ]
+      },
+      {
+        id: 'lp3-w', part: 3, section: 1, type: 'matching_dropdown', topicColor: 'purple',
+        topic: 'Children and young people with technology',
+        opener: 'Woman mở lời',
+        mnemonic: 'Bạn Bè Với Mình và người trẻ dùng công nghệ',
+        acronym: 'BBWM',
+        mnemonicNote: 'Man mở lời: BBWM — Bạn Bè Mình Với người trẻ dùng công nghệ',
+        statements: [
+          { id: 'st-w-1', text: 'Children are interested in tech-based **learning**', speaker: 'Both' },
+          { id: 'st-w-2', text: 'Children find it difficult to communicate **offline**', speaker: 'Both' },
+          { id: 'st-w-3', text: '**Families** require help with management of technology', speaker: 'Woman' },
+          { id: 'st-w-4', text: 'Children can learn to regulate their **online** interactions', speaker: 'Man' }
+        ]
+      },
+      {
+        id: 'lp3-comm-m', part: 3, section: 2, type: 'matching_dropdown', topicColor: 'indigo',
         topic: 'Community', opener: 'Man mở lời', mnemonic: 'Bố Will Muốn Ban ấy xây dựng cộng đồng', acronym: 'BWMB',
         mnemonicNote: 'Woman mở lời: BMWB — Bà Mong Will Biết xây dựng cộng đồng',
         statements: [
-          { id: 'st-m-1', text: 'Community design influence people **behavior**', speaker: 'Both' },
-          { id: 'st-m-2', text: 'Sense of community **takes time**', speaker: 'Woman' },
-          { id: 'st-m-3', text: 'Work community and social community are the same', speaker: 'Man' },
-          { id: 'st-m-4', text: '**Technology** improve the way community formed', speaker: 'Both' }
+          { id: 'st-comm-m-1', text: 'Community design influence people **behavior**', speaker: 'Both' },
+          { id: 'st-comm-m-2', text: 'Sense of community **takes time**', speaker: 'Woman' },
+          { id: 'st-comm-m-3', text: 'Work community and social community are the same', speaker: 'Man' },
+          { id: 'st-comm-m-4', text: '**Technology** improve the way community formed', speaker: 'Both' }
         ]
       },
       {
-        id: 'lp3-w', part: 3, section: 1, type: 'matching_dropdown', topicColor: 'indigo',
+        id: 'lp3-comm-w', part: 3, section: 2, type: 'matching_dropdown', topicColor: 'indigo',
         topic: 'Community', opener: 'Woman mở lời', mnemonic: 'Bà Mong Will Biết xây dựng cộng đồng', acronym: 'BMWB',
         mnemonicNote: 'Man mở lời: BWMB — Bố Will Muốn Ban ấy xây dựng cộng đồng',
         statements: [
-          { id: 'st-w-1', text: 'Community design influence people **behavior**', speaker: 'Both' },
-          { id: 'st-w-2', text: 'Work community and social community are the same', speaker: 'Man' },
-          { id: 'st-w-3', text: 'Sense of community **takes time**', speaker: 'Woman' },
-          { id: 'st-w-4', text: '**Technology** improve the way community formed', speaker: 'Both' }
+          { id: 'st-comm-w-1', text: 'Community design influence people **behavior**', speaker: 'Both' },
+          { id: 'st-comm-w-2', text: 'Work community and social community are the same', speaker: 'Man' },
+          { id: 'st-comm-w-3', text: 'Sense of community **takes time**', speaker: 'Woman' },
+          { id: 'st-comm-w-4', text: '**Technology** improve the way community formed', speaker: 'Both' }
         ]
       },
       {
-        id: 'lp3-art-m', part: 3, section: 2, type: 'matching_dropdown', topicColor: 'amber',
+        id: 'lp3-art-m', part: 3, section: 3, type: 'matching_dropdown', topicColor: 'amber',
         topic: 'Art', opener: 'Man đọc trước', mnemonic: 'Will muốn bố mẹ cho phép học nghệ thuật', acronym: 'WMBM',
         mnemonicNote: 'Woman đọc trước: MWBW — mẹ Will bảo Will đi học nghệ thuật',
         statements: [
@@ -520,7 +566,7 @@ const App = () => {
         ]
       },
       {
-        id: 'lp3-art-w', part: 3, section: 2, type: 'matching_dropdown', topicColor: 'amber',
+        id: 'lp3-art-w', part: 3, section: 3, type: 'matching_dropdown', topicColor: 'amber',
         topic: 'Art', opener: 'Woman đọc trước', mnemonic: 'Mẹ Will bảo Will đi học nghệ thuật', acronym: 'MWBW',
         mnemonicNote: 'Man đọc trước: WMBM — Will muốn bố mẹ cho phép học nghệ thuật',
         statements: [
@@ -531,7 +577,7 @@ const App = () => {
         ]
       },
       {
-        id: 'lp3-beauty-m', part: 3, section: 3, type: 'matching_dropdown', topicColor: 'fuchsia',
+        id: 'lp3-beauty-m', part: 3, section: 4, type: 'matching_dropdown', topicColor: 'fuchsia',
         topic: 'Beauty', opener: 'Man đọc trước', mnemonic: 'Win Muốn Bố Mẹ trẻ đẹp', acronym: 'WMBM',
         mnemonicNote: 'Woman đọc trước: MWBW',
         statements: [
@@ -542,7 +588,7 @@ const App = () => {
         ]
       },
       {
-        id: 'lp3-beauty-w', part: 3, section: 3, type: 'matching_dropdown', topicColor: 'fuchsia',
+        id: 'lp3-beauty-w', part: 3, section: 4, type: 'matching_dropdown', topicColor: 'fuchsia',
         topic: 'Beauty', opener: 'Woman đọc trước', mnemonic: 'Woman đọc trước — MWBW', acronym: 'MWBW',
         mnemonicNote: 'Man đọc trước: WMBM — Win Muốn Bố Mẹ trẻ đẹp',
         statements: [
@@ -553,7 +599,7 @@ const App = () => {
         ]
       },
       {
-        id: 'lp3-internet', part: 3, section: 4, type: 'matching_dropdown', topicColor: 'sky',
+        id: 'lp3-internet', part: 3, section: 5, type: 'matching_dropdown', topicColor: 'sky',
         topic: 'Internet',
         opener: 'Nam nói trước',
         mnemonic: 'Will Bảo Mẹ Biết dùng internet',
@@ -567,7 +613,7 @@ const App = () => {
         ]
       },
       {
-        id: 'lp3-internet-w', part: 3, section: 4, type: 'matching_dropdown', topicColor: 'sky',
+        id: 'lp3-internet-w', part: 3, section: 5, type: 'matching_dropdown', topicColor: 'sky',
         topic: 'Internet',
         opener: 'Nữ mở lời',
         mnemonic: 'Mẹ biết Will bận dùng Internet',
@@ -581,7 +627,7 @@ const App = () => {
         ]
       },
       {
-        id: 'lp3-uni', part: 3, section: 5, type: 'matching_dropdown', topicColor: 'emerald',
+        id: 'lp3-uni', part: 3, section: 6, type: 'matching_dropdown', topicColor: 'emerald',
         topic: 'Universities',
         opener: 'Man mở lời',
         mnemonic: 'Bố Will mắng Will vì trượt đại học',
@@ -595,7 +641,7 @@ const App = () => {
         ]
       },
       {
-        id: 'lp3-uni-w', part: 3, section: 5, type: 'matching_dropdown', topicColor: 'emerald',
+        id: 'lp3-uni-w', part: 3, section: 6, type: 'matching_dropdown', topicColor: 'emerald',
         topic: 'Universities',
         opener: 'Woman mở lời',
         mnemonic: 'Bố Mẹ Will Muốn học Đại Học',
@@ -609,7 +655,7 @@ const App = () => {
         ]
       },
       {
-        id: 'lp3-pol', part: 3, section: 6, type: 'matching_dropdown', topicColor: 'rose',
+        id: 'lp3-pol', part: 3, section: 7, type: 'matching_dropdown', topicColor: 'rose',
         topic: 'Politics',
         opener: 'Giọng nam đọc trước',
         mnemonic: 'Bố Mẹ Will Bắt học chính trị',
@@ -623,7 +669,7 @@ const App = () => {
         ]
       },
       {
-        id: 'lp3-pol-w', part: 3, section: 6, type: 'matching_dropdown', topicColor: 'rose',
+        id: 'lp3-pol-w', part: 3, section: 7, type: 'matching_dropdown', topicColor: 'rose',
         topic: 'Politics',
         opener: 'Giọng nữ đọc trước',
         mnemonic: 'Bố và (W) mẹ bàn về chính trị',
@@ -637,7 +683,7 @@ const App = () => {
         ]
       },
       {
-        id: 'lp3-tech', part: 3, section: 7, type: 'matching_dropdown', topicColor: 'violet',
+        id: 'lp3-tech', part: 3, section: 8, type: 'matching_dropdown', topicColor: 'violet',
         topic: 'Information and Technology',
         opener: 'Giọng nam trước',
         mnemonic: 'Mẹ 2 Win Bắt học công nghệ',
@@ -651,7 +697,7 @@ const App = () => {
         ]
       },
       {
-        id: 'lp3-tech-w', part: 3, section: 7, type: 'matching_dropdown', topicColor: 'violet',
+        id: 'lp3-tech-w', part: 3, section: 8, type: 'matching_dropdown', topicColor: 'violet',
         topic: 'Information and Technology',
         opener: 'Giọng nữ trước',
         mnemonic: 'Will Mong Muốn Biết về công nghệ',
@@ -665,7 +711,7 @@ const App = () => {
         ]
       },
       {
-        id: 'lp3-work-m', part: 3, section: 8, type: 'matching_dropdown', topicColor: 'teal',
+        id: 'lp3-work-m', part: 3, section: 9, type: 'matching_dropdown', topicColor: 'teal',
         topic: 'Changes in workplace',
         opener: 'Man mở đầu',
         mnemonic: 'Mẹ Will Bảo Muốn đổi nơi làm việc',
@@ -679,7 +725,7 @@ const App = () => {
         ]
       },
       {
-        id: 'lp3-work-w', part: 3, section: 8, type: 'matching_dropdown', topicColor: 'teal',
+        id: 'lp3-work-w', part: 3, section: 9, type: 'matching_dropdown', topicColor: 'teal',
         topic: 'Changes in workplace',
         opener: 'Woman mở lời',
         mnemonic: 'Will Muốn Bố Viết về thay đổi công việc',
@@ -693,7 +739,7 @@ const App = () => {
         ]
       },
       {
-        id: 'lp3-farm-m', part: 3, section: 9, type: 'matching_dropdown', topicColor: 'cyan',
+        id: 'lp3-farm-m', part: 3, section: 10, type: 'matching_dropdown', topicColor: 'cyan',
         topic: 'Urban farming',
         opener: 'Giọng nam đọc trước',
         mnemonic: 'Will Muốn Mẹ Bỏ làm nghề nông',
@@ -707,7 +753,7 @@ const App = () => {
         ]
       },
       {
-        id: 'lp3-farm-w', part: 3, section: 9, type: 'matching_dropdown', topicColor: 'cyan',
+        id: 'lp3-farm-w', part: 3, section: 10, type: 'matching_dropdown', topicColor: 'cyan',
         topic: 'Urban farming',
         opener: 'Giọng nữ đọc trước',
         mnemonic: 'Mẹ Will và Will Biết làm nghề nông',
@@ -721,7 +767,7 @@ const App = () => {
         ]
       },
       {
-        id: 'lp3-music-m', part: 3, section: 10, type: 'matching_dropdown', topicColor: 'orange',
+        id: 'lp3-music-m', part: 3, section: 11, type: 'matching_dropdown', topicColor: 'orange',
         topic: 'Singer and music',
         opener: 'Man đọc trước',
         mnemonic: 'Will Biết Mẹ Bận làm ca sĩ',
@@ -735,7 +781,7 @@ const App = () => {
         ]
       },
       {
-        id: 'lp3-music-w', part: 3, section: 10, type: 'matching_dropdown', topicColor: 'orange',
+        id: 'lp3-music-w', part: 3, section: 11, type: 'matching_dropdown', topicColor: 'orange',
         topic: 'Singer and music',
         opener: 'Woman nói trước',
         mnemonic: 'Mẹ Bảo Win Bố đang làm ca sĩ',
@@ -749,7 +795,7 @@ const App = () => {
         ]
       },
       {
-        id: 'lp3-audit-m', part: 3, section: 11, type: 'matching_dropdown', topicColor: 'pink',
+        id: 'lp3-audit-m', part: 3, section: 12, type: 'matching_dropdown', topicColor: 'pink',
         topic: 'Audition',
         opener: 'Man mở lời',
         mnemonic: 'Mẹ Will Bảo Bố thử giọng hát',
@@ -763,7 +809,7 @@ const App = () => {
         ]
       },
       {
-        id: 'lp3-audit-w', part: 3, section: 11, type: 'matching_dropdown', topicColor: 'pink',
+        id: 'lp3-audit-w', part: 3, section: 12, type: 'matching_dropdown', topicColor: 'pink',
         topic: 'Audition',
         opener: 'Woman mở lời',
         mnemonic: 'WMBB — woman trước',
@@ -777,7 +823,7 @@ const App = () => {
         ]
       },
       {
-        id: 'lp3-local-m', part: 3, section: 12, type: 'matching_dropdown', topicColor: 'lime',
+        id: 'lp3-local-m', part: 3, section: 13, type: 'matching_dropdown', topicColor: 'lime',
         topic: 'Local cultural center',
         opener: 'Man nói trước',
         mnemonic: 'Win Bảo Mẹ Mang văn hoá địa phương',
@@ -791,7 +837,7 @@ const App = () => {
         ]
       },
       {
-        id: 'lp3-local-w', part: 3, section: 12, type: 'matching_dropdown', topicColor: 'lime',
+        id: 'lp3-local-w', part: 3, section: 13, type: 'matching_dropdown', topicColor: 'lime',
         topic: 'Local cultural center',
         opener: 'Woman nói trước',
         mnemonic: 'Mẹ Bảo Win Viết về văn hoá địa phương',
@@ -807,9 +853,35 @@ const App = () => {
 
       // --- PART 4 LISTENING — điền chỗ trống (từ trong ngoặc → kho bên phải); mỗi section: chủ đề + câu ---
       {
-        id: 'lp4-1',
+        id: 'lp4-pod',
         part: 4,
         section: 1,
+        topic: 'Podcasting',
+        content: [
+          'Nghe (',{word: "shows"},') về podcast là cách tốt (',
+          { word: 'a great way' },
+          ') để thư giãn'
+        ]
+      },
+      {
+        id: 'lp4-time',
+        part: 4,
+        section: 2,
+        topic: 'Using time effectively (sử dụng thời gian hiệu quả)',
+        content: [
+          'Sử dụng thời gian (',
+          { word: 'Using time' },
+          ') hiệu quả (',
+          { word: 'effective' },
+          ') cần nhiều nỗ lực (',
+          { word: 'effort' },
+          ').'
+        ]
+      },
+      {
+        id: 'lp4-1',
+        part: 4,
+        section: 3,
         topic: 'making plans — Set up goals',
         content: [
           'Lập mục tiêu ',
@@ -824,7 +896,7 @@ const App = () => {
       {
         id: 'lp4-2',
         part: 4,
-        section: 2,
+        section: 4,
         topic: 'Writers',
         content: [
           'Nhà văn ',
@@ -839,7 +911,7 @@ const App = () => {
       {
         id: 'lp4-3',
         part: 4,
-        section: 3,
+        section: 5,
         topic: 'Promotion campaign for a product',
         content: [
           'Quảng cáo ',
@@ -854,7 +926,7 @@ const App = () => {
       {
         id: 'lp4-4',
         part: 4,
-        section: 4,
+        section: 6,
         topic: 'Advertising',
         content: [
           'Quảng cáo ',
@@ -869,7 +941,7 @@ const App = () => {
       {
         id: 'lp4-5',
         part: 4,
-        section: 5,
+        section: 7,
         topic: 'sport competition in school',
         content: [
           'Thể thao tại trường ',
@@ -884,7 +956,7 @@ const App = () => {
       {
         id: 'lp4-6',
         part: 4,
-        section: 6,
+        section: 8,
         topic: 'Regional Development Planning',
         content: [
           'Phát triển vùng ',
@@ -899,7 +971,7 @@ const App = () => {
       {
         id: 'lp4-7',
         part: 4,
-        section: 7,
+        section: 9,
         topic: '16. Personal finances',
         content: [
           'Tài chính cá nhân ',
@@ -914,7 +986,7 @@ const App = () => {
       {
         id: 'lp4-8',
         part: 4,
-        section: 8,
+        section: 10,
         topic: "A writer's new novel",
         content: [
           'Tiểu thuyết mới ',
@@ -929,7 +1001,7 @@ const App = () => {
       {
         id: 'lp4-9',
         part: 4,
-        section: 9,
+        section: 11,
         topic: "Writer's block",
         content: [
           'Viết văn ',
@@ -944,7 +1016,7 @@ const App = () => {
       {
         id: 'lp4-10',
         part: 4,
-        section: 10,
+        section: 12,
         topic: 'New series',
         content: [
           'New series thì làm hội thoại ',
@@ -957,7 +1029,7 @@ const App = () => {
       {
         id: 'lp4-11',
         part: 4,
-        section: 11,
+        section: 13,
         topic: 'Professionalism',
         content: [
           'Sự chuyên nghiệp ',
@@ -972,7 +1044,7 @@ const App = () => {
       {
         id: 'lp4-12',
         part: 4,
-        section: 12,
+        section: 14,
         topic: 'Life after university',
         content: [
           'Cuộc sống sau đại học ',
@@ -987,7 +1059,7 @@ const App = () => {
       {
         id: 'lp4-13',
         part: 4,
-        section: 13,
+        section: 15,
         topic: 'The life of scientist',
         content: [
           'Cuộc sống của một nhà khoa học ',
@@ -1002,7 +1074,7 @@ const App = () => {
       {
         id: 'lp4-14',
         part: 4,
-        section: 14,
+        section: 16,
         topic: 'Security camera',
         content: [
           'Camera giám sát ',
@@ -1017,7 +1089,7 @@ const App = () => {
       {
         id: 'lp4-15',
         part: 4,
-        section: 15,
+        section: 17,
         topic: "musician's life",
         content: [
           'Nhạc sĩ ',
@@ -1032,7 +1104,7 @@ const App = () => {
       {
         id: 'lp4-16',
         part: 4,
-        section: 16,
+        section: 18,
         topic: 'a new guide book',
         content: [
           'Hướng dẫn mới ',
@@ -1047,7 +1119,7 @@ const App = () => {
       {
         id: 'lp4-17',
         part: 4,
-        section: 17,
+        section: 19,
         topic: 'Working from home',
         content: [
           'Làm việc ở nhà ',
@@ -1062,7 +1134,7 @@ const App = () => {
       {
         id: 'lp4-18',
         part: 4,
-        section: 18,
+        section: 20,
         topic: 'criticism of a new novel',
         content: [
           'Tiểu thuyết mới ',
@@ -1077,7 +1149,7 @@ const App = () => {
       {
         id: 'lp4-19',
         part: 4,
-        section: 19,
+        section: 21,
         topic: 'TV series',
         content: [
           'Phim truyền hình ',
@@ -1092,7 +1164,7 @@ const App = () => {
       {
         id: 'lp4-20',
         part: 4,
-        section: 20,
+        section: 22,
         topic: 'The importance of sleep',
         content: [
           'Để ngủ ',
@@ -1109,7 +1181,7 @@ const App = () => {
       {
         id: 'lp4-21',
         part: 4,
-        section: 21,
+        section: 23,
         topic: 'a break from studying',
         content: [
           'Sau khi nghỉ học thì tôi đi học cao học ',
@@ -1122,7 +1194,7 @@ const App = () => {
       {
         id: 'lp4-22',
         part: 4,
-        section: 22,
+        section: 24,
         topic: 'Research about happiness',
         content: [
           'Nghiên cứu về sự hạnh phúc ',
@@ -1137,7 +1209,7 @@ const App = () => {
       {
         id: 'lp4-23',
         part: 4,
-        section: 23,
+        section: 25,
         topic: 'Restaurant',
         content: [
           'Nhà hàng ',
