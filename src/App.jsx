@@ -1258,9 +1258,9 @@ const App = () => {
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900 font-sans pb-32">
       <nav className="bg-white/90 backdrop-blur-md border-b border-slate-200 sticky top-0 z-50 shadow-sm">
-        <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
-          <div className="flex items-center space-x-4">
-            <div className="relative">
+        <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between gap-2 min-w-0">
+          <div className="flex items-center space-x-2 sm:space-x-4 min-w-0 flex-1">
+            <div className="relative shrink-0">
               <button onClick={() => setIsDropdownOpen(!isDropdownOpen)} className="flex items-center space-x-2 bg-slate-100 hover:bg-slate-200 px-4 py-2 rounded-2xl transition-all font-bold text-slate-700 shadow-sm">
                 {skill === 'Reading' ? <BookOpen className="w-5 h-5 text-indigo-600"/> : <Headphones className="w-5 h-5 text-indigo-600"/>}
                 <span>{skill}</span>
@@ -1274,13 +1274,13 @@ const App = () => {
                 </div>
               )}
             </div>
-            <div className="hidden sm:flex items-center space-x-1 ml-4 border-l border-slate-200 pl-4">
+            <div className="flex items-center space-x-0.5 sm:space-x-1 ml-2 sm:ml-4 border-l border-slate-200 pl-2 sm:pl-4 overflow-x-auto overscroll-x-contain touch-pan-x min-w-0 flex-1 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
               {Array.from({ length: maxParts }, (_, i) => i + 1).map(p => (
-                <button key={p} onClick={() => {setPart(p); setSection(1);}} className={`px-4 py-2 rounded-xl text-sm font-bold transition-all ${part === p ? 'bg-indigo-600 text-white shadow-lg' : 'text-slate-500 hover:bg-slate-100'}`}>P{p}</button>
+                <button key={p} type="button" onClick={() => {setPart(p); setSection(1);}} className={`shrink-0 px-2.5 sm:px-4 py-2 rounded-xl text-sm font-bold transition-all ${part === p ? 'bg-indigo-600 text-white shadow-lg' : 'text-slate-500 hover:bg-slate-100'}`}>P{p}</button>
               ))}
             </div>
           </div>
-          <div className="font-black text-indigo-600 tracking-tighter italic text-xl uppercase tracking-widest">Aptis PRO</div>
+          <div className="font-black text-indigo-600 tracking-tighter italic text-lg sm:text-xl uppercase tracking-widest shrink-0">Aptis PRO</div>
         </div>
       </nav>
 
