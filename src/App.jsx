@@ -368,7 +368,7 @@ const App = () => {
       // S4
       { id: 'l44', part: 1, section: 4, q: "What is the **dress** she wears like?", t: "Cô ấy mặc váy gì?", a: "Long and red" },
       { id: 'l45', part: 1, section: 4, q: "What **color is her dress**?", t: "Váy của cô ấy màu gì?", a: "Black" },
-      { id: 'l46', part: 1, section: 4, q: "What **color top** is he going to **buy**?", t: "Anh ấy định mua áo màu gì?", a: "White" },
+      { id: 'l46', part: 1, section: 4, q: "What **color top** is he going to **buy**?", t: "Anh ấy định mua áo màu gì?", a: "Black" },
       { id: 'l47', part: 1, section: 4, q: "What color is the **teacher building**?", t: "Cô giáo đang xây nhà màu gì?", a: "White" },
       { id: 'l48', part: 1, section: 4, q: "What color is **Jack's house**?", t: "Nhà của Jack màu gì?", a: "Red" },
       { id: 'l49', part: 1, section: 4, q: "What does she do in her **free time**?", t: "Cô ấy làm gì vào thời gian rảnh?", a: "go to the theater and play sports" },
@@ -376,7 +376,7 @@ const App = () => {
       { id: 'l51', part: 1, section: 4, q: "**How does the teacher go to school?**", t: "Cô giáo đi học như thế nào?", a: "She walks" },
       { id: 'l52', part: 1, section: 4, q: "What is the man going to do **after work**?", t: "Người đàn ông sẽ làm gì sau giờ làm việc?", a: "Goes Running" },
       { id: 'l53', part: 1, section: 4, q: "What is she **good at**?", t: "Cô ấy giỏi việc gì?", a: "Plays football" },
-      { id: 'l54', part: 1, section: 4, q: "What does he do **after work**?", t: "Anh ấy làm gì sau giờ làm việc?", a: "Goes home" },
+      { id: 'l54', part: 1, section: 4, q: "What does he do **after work**?", t: "Anh ấy làm gì sau giờ làm việc?", a: "Plays football" },
       { id: 'l55', part: 1, section: 4, q: "What does **Lily do** in the **evening**?", t: "Lily làm gì vào buổi tối?", a: "Goes for a walk" },
       { id: 'l56', part: 1, section: 4, q: "What does the family do most **weekend**?", t: "Gia đình thường làm gì vào cuối tuần?", a: "Goes for a walk" },
       { id: 'l57', part: 1, section: 4, q: "**What did the woman do on holiday?**", t: "Người phụ nữ đã làm gì vào kỳ nghỉ?", a: "Go to the park" },
