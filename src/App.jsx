@@ -659,7 +659,7 @@ const App = () => {
         topic: 'Politics',
         opener: 'Giọng nam đọc trước',
         mnemonic: 'Bố Mẹ Will Bắt học chính trị',
-        mnemonicNote: 'Woman nói trước: BWMB — Bố và (W) mẹ bàn về chính trị',
+        mnemonicNote: 'Woman nói trước: BWMB — Bố Will Muốn Bàn về chính trị',
         acronym: 'BWMB',
         statements: [
           { id: 'lp3-pol-1', text: '**Young people** are more into politics', speaker: 'Both' },
@@ -673,7 +673,7 @@ const App = () => {
         topic: 'Politics',
         opener: 'Giọng nữ đọc trước',
         mnemonic: 'Bố và (W) mẹ bàn về chính trị',
-        mnemonicNote: 'Giọng nam: BWMB — Bố Mẹ Will Bắt học chính trị',
+        mnemonicNote: 'Giọng nam: BWMB — Bà Will Muốn Bàn về chính trị',
         acronym: 'BWMB',
         statements: [
           { id: 'lp3-polw-1', text: '**Young people** are more into politics', speaker: 'Both' },
