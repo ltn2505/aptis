@@ -448,7 +448,7 @@ const App = () => {
       { id: 'l220', part: 1, section: 6, q: "Which **room** is the **class**?", t: "Lớp học ở phòng nào?", a: "Room 301" },
       { id: 'l221', part: 1, section: 6, q: "Where are they **standing**?", t: "Họ đang đứng ở đâu?", a: "university area" },
       { id: 'l222', part: 1, section: 6, q: "A student talking about **housing** — where does he **live** now?", t: "Một học sinh đang nói về nhà ở; hiện tại cậu ấy sống ở đâu?", a: "a town hall" },
-      { id: 'l223', part: 1, section: 6, q: "Where does **Malik** want to **go**?", t: "Malik muốn đi đâu? (đáp án trống trong đề — tạm đặt)", a: "the sports centre" },
+      { id: 'l223', part: 1, section: 6, q: "Where does **Malik** want to **go**?", t: "Malik muốn đi đâu?", a: "a town hall" },
       { id: 'l224', part: 1, section: 6, q: "How did the **concert** **end**?", t: "Buổi hòa nhạc kết thúc như thế nào?", a: "The city 's favorite group" },
       { id: 'l225', part: 1, section: 6, q: "What is **Soobin**'s favorite **room**?", t: "Phòng yêu thích của Soobin là gì?", a: "bathroom" },
       { id: 'l226', part: 1, section: 6, q: "The **football club** **near** — what is **near** it?", t: "Câu lạc bộ bóng đá gần đó", a: "A park" },
