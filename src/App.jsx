@@ -677,8 +677,8 @@ const App = () => {
         acronym: 'BWMB',
         statements: [
           { id: 'lp3-polw-1', text: '**Young people** are more into politics', speaker: 'Both' },
-          { id: 'lp3-polw-2', text: '**Social media** changes politics', speaker: 'Man' },
-          { id: 'lp3-polw-3', text: 'People are now **better informed** on politics', speaker: 'Woman' },
+          { id: 'lp3-polw-2', text: '**Social media** changes politics', speaker: 'Woman' },
+          { id: 'lp3-polw-3', text: 'People are now **better informed** on politics', speaker: 'Man' },
           { id: 'lp3-polw-4', text: 'More **women** pursue politics', speaker: 'Both' }
         ]
       },
