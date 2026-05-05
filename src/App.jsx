@@ -659,12 +659,12 @@ const App = () => {
         topic: 'Politics',
         opener: 'Giọng nam đọc trước',
         mnemonic: 'Bố Mẹ Will Bắt học chính trị',
-        mnemonicNote: 'Woman nói trước: BWMB — Bố Will Muốn Bàn về chính trị',
+        mnemonicNote: 'Bố Mẹ Will Bắt học chính trị',
         acronym: 'BWMB',
         statements: [
           { id: 'lp3-pol-1', text: '**Young people** are more into politics', speaker: 'Both' },
-          { id: 'lp3-pol-2', text: '**Social media** changes politics', speaker: 'Woman' },
-          { id: 'lp3-pol-3', text: 'People are now **better informed** on politics', speaker: 'Man' },
+          { id: 'lp3-pol-2', text: '**Social media** changes politics', speaker: 'Man' },
+          { id: 'lp3-pol-3', text: 'People are now **better informed** on politics', speaker: 'Will' },
           { id: 'lp3-pol-4', text: 'More **women** pursue politics', speaker: 'Both' }
         ]
       },
@@ -672,7 +672,7 @@ const App = () => {
         id: 'lp3-pol-w', part: 3, section: 7, type: 'matching_dropdown', topicColor: 'rose',
         topic: 'Politics',
         opener: 'Giọng nữ đọc trước',
-        mnemonic: 'Bố và (W) mẹ bàn về chính trị',
+        mnemonic: 'BWMB — Bà Will Muốn Bàn về chính trị',
         mnemonicNote: 'Giọng nam: BWMB — Bà Will Muốn Bàn về chính trị',
         acronym: 'BWMB',
         statements: [
