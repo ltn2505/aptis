@@ -664,7 +664,7 @@ const App = () => {
         statements: [
           { id: 'lp3-pol-1', text: '**Young people** are more into politics', speaker: 'Both' },
           { id: 'lp3-pol-2', text: '**Social media** changes politics', speaker: 'Man' },
-          { id: 'lp3-pol-3', text: 'People are now **better informed** on politics', speaker: 'Will' },
+          { id: 'lp3-pol-3', text: 'People are now **better informed** on politics', speaker: 'Woman' },
           { id: 'lp3-pol-4', text: 'More **women** pursue politics', speaker: 'Both' }
         ]
       },
